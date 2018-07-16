@@ -11,7 +11,9 @@ import {
     GooglePushedButton,
     PushedIconButton,
     TextInput,
-    FloatingTextInput
+    FloatingTextInput,
+    TextArea,
+    FloatingTextArea
 } from 'jdesign';
 
 const App = () => (
@@ -73,7 +75,10 @@ const App = () => (
         <GoogleButton style={{ margin: '12px' }} />
         <h2>Text Inputs</h2>
         <TextInput style={{ margin: '12px' }} placeholder="Text Input" />
-        <FloatingTextInput style={{ margin: '12px' }} placeholder="asdasd" />
+        <FloatingTextInput style={{ margin: '12px' }} placeholder="Username" />
+        <h2>Text Areas</h2>
+        <TextArea rows={4} placeholder='Text Area' />
+        <FloatingTextArea rows={4} placeholder='Floating Text Area' />
     </div>
 );
 
