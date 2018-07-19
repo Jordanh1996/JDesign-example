@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { 
+    //Buttons
     Button,
     TrashButton,
     AddButton,
@@ -10,11 +11,16 @@ import {
     GoogleButton,
     GooglePushedButton,
     PushedIconButton,
+    // Text Input
     TextInput,
     FloatingTextInput,
+    // Text Area
     TextArea,
     FloatingTextArea,
-    Radio
+    // Radio
+    Radio,
+    //Checkbox
+    Checkbox
 } from 'jdesign';
 
 const App = () => (
@@ -80,9 +86,18 @@ const App = () => (
         <h2>Text Areas</h2>
         <TextArea rows={4} placeholder='Text Area' />
         <FloatingTextArea rows={4} placeholder='Floating Text Area' />
+        <h2>Radio buttons</h2>
         <Radio name="asd" />
         <Radio name="asd" color='red' />
         <Radio name="asd" disabled />
+        <h2>Check boxes</h2>
+        <Checkbox />
+        <p>with ripple</p>
+        <Checkbox ripple />
+        <p>different color</p>
+        <Checkbox ripple color='red' vColor='black' />
+        <p>disabled</p>
+        <Checkbox disabled />
     </div>
 );
 
