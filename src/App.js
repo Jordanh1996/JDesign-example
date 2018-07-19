@@ -19,8 +19,10 @@ import {
     FloatingTextArea,
     // Radio
     Radio,
-    //Checkbox
-    Checkbox
+    // Checkbox
+    Checkbox,
+    // Switch
+    Switch
 } from 'jdesign';
 
 const App = () => (
@@ -98,6 +100,12 @@ const App = () => (
         <Checkbox ripple color='red' vColor='black' />
         <p>disabled</p>
         <Checkbox disabled />
+        <h2>Switches</h2>
+        <Switch />
+        <p>different color</p>
+        <Switch circleColor='red' railColor='pink' />
+        <p>disabled</p>
+        <Switch disabled />
     </div>
 );
 
