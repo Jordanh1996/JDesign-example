@@ -13,7 +13,8 @@ import {
     TextInput,
     FloatingTextInput,
     TextArea,
-    FloatingTextArea
+    FloatingTextArea,
+    Radio
 } from 'jdesign';
 
 const App = () => (
@@ -79,6 +80,9 @@ const App = () => (
         <h2>Text Areas</h2>
         <TextArea rows={4} placeholder='Text Area' />
         <FloatingTextArea rows={4} placeholder='Floating Text Area' />
+        <Radio name="asd" />
+        <Radio name="asd" color='red' />
+        <Radio name="asd" disabled />
     </div>
 );
 
