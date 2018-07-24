@@ -22,7 +22,10 @@ import {
     // Checkbox
     Checkbox,
     // Switch
-    Switch
+    Switch,
+    // Select
+    Select,
+    Option
 } from 'jdesign';
 
 const App = () => (
@@ -88,9 +91,38 @@ const App = () => (
         <h2>Text Areas</h2>
         <TextArea rows={4} placeholder='Text Area' />
         <FloatingTextArea rows={4} placeholder='Floating Text Area' />
+        <h2>Select Inputs</h2>
+        <Select defaultValue='3'>
+            <Option>1</Option>
+            <Option>2</Option>
+            <Option value='3'>3</Option>
+            <Option>4</Option>
+            <Option>5</Option>
+        </Select>
+        <p>When a select has to many options it creates a scroll for you</p>
+        <Select>
+            <Option>1</Option>
+            <Option>2</Option>
+            <Option>3</Option>
+            <Option>4</Option>
+            <Option>5</Option>
+            <Option selected>6</Option>
+            <Option>7</Option>
+            <Option>8</Option>
+            <Option>9</Option>
+            <Option>10</Option>
+            <Option>11</Option>
+            <Option>12</Option>
+        </Select>
+        <p>disabled</p>
+        <Select disabled>
+            <Option selected>1</Option>
+        </Select>
         <h2>Radio buttons</h2>
         <Radio name="asd" />
+        <p>with custom color</p>
         <Radio name="asd" color='red' />
+        <p>disabled</p>
         <Radio name="asd" disabled />
         <h2>Check boxes</h2>
         <Checkbox />
