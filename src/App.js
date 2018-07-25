@@ -25,6 +25,7 @@ import {
     Switch,
     // Select
     Select,
+    FloatingSelect,
     Option
 } from 'jdesign';
 
@@ -118,6 +119,37 @@ const App = () => (
         <Select disabled>
             <Option selected>1</Option>
         </Select>
+        <p>you can search the select options using the arrow keys</p>
+        <p>you can also type on you keyboard to search</p>
+        <Select>
+            <Option>USA</Option>
+            <Option>Canada</Option>
+            <Option>Germany</Option>
+            <Option>France</Option>
+            <Option selected>United Kingdom</Option>
+            <Option>Iraq</Option>
+            <Option>Iran</Option>
+            <Option>Korea</Option>
+            <Option>Spain</Option>
+            <Option>Denmark</Option>
+            <Option>Switzerland</Option>
+            <Option>Brazil</Option>
+        </Select>
+        <p>Floating Select</p>
+        <FloatingSelect floatingLabel='Number'>
+            <Option>1</Option>
+            <Option>2</Option>
+            <Option>3</Option>
+            <Option>4</Option>
+            <Option>5</Option>
+            <Option>6</Option>
+            <Option>7</Option>
+            <Option>8</Option>
+            <Option>9</Option>
+            <Option>10</Option>
+            <Option>11</Option>
+            <Option>12</Option>
+        </FloatingSelect>
         <h2>Radio buttons</h2>
         <Radio name="asd" />
         <p>with custom color</p>
